@@ -13,13 +13,20 @@
 			color: #912A8D;
 			font-family: helvetica, arial, sans-serif;
 			font-weight: bold;
-			font-size: 128px;
 		}
 		body {
 			text-align: center;
 		}
-		.image {
+		p {
+			font-size: 128px;
+		}
+		.no-image {
 			width: 2em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.image {
+			width: 16em;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -30,6 +37,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<h1>Does Carl have a caricature yet?</h1>
 	<div id="content">
 		{{#has_caricature}}
 			<div class="image">
@@ -38,7 +46,7 @@
 			</div>
 		{{/has_caricature}}
 		{{^has_caricature}}
-			<p class="image">NO</p>
+			<p class="no-image">NO</p>
 		{{/has_caricature}}
 	</div>
 </body>
