@@ -17,4 +17,4 @@ api = tweepy.API(auth)
 status_code = requests.get('http://www.unboxedconsulting.com/people/carl-whittaker').status_code
 status_response = 'YES' if status_code == 200 else 'NO'
 
-api.update_status(status_response + ' http://doescarlhaveacaricatureyet.com ' + datetime.datetime.now().strftime('%y-%m-%y %H:%M'))
+api.update_status(status_response + ' http://www.doescarlhaveacaricatureyet.com ' + datetime.datetime.now().strftime('%y-%m-%y %H:%M'))
