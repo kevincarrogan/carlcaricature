@@ -20,7 +20,7 @@ def index():
         content = response.content
 
         soup = BeautifulSoup(content)
-        image = 'http://www.unboxedconsulting.com' + soup.select('a.front img')[0]['src']
+        image = 'http://www.unboxedconsulting.com' + soup.select('.vcard .photo')[0]['src']
     else:
         image = ''
 
